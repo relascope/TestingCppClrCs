@@ -17,3 +17,8 @@ bool CppDllClass::TrueMyself()
 {
 	return true;
 }
+
+bool CppDllClass::TrueStatic()
+{
+	return true;
+}

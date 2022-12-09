@@ -1,22 +1,30 @@
 #include <gtest/gtest.h>
 #include "isolator.h"
 
-
-
-bool MyGlobalTrue(const char* par)
-{
-	return true;
-}
-
+#include "globals.h"
 
 namespace IsolatorTest
 {
+	TEST(Isolator, fakenoargs)
+	{
+		FAKE_GLOBAL(MyGlobalTrueNoArgs);
+ 		WHEN_CALLED(MyGlobalTrueNoArgs()).Return(false);
+
+		EXPECT_FALSE(MyGlobalTrueNoArgs());
+
+		ISOLATOR_CLEANUP();
+	}
+
+
 	TEST(Isolator, googletest)
 	{
-		FAKE_GLOBAL(MyGlobalTrue);
-		WHEN_CALLED(MyGlobalTrue(_)).Return(false);
+		FAKE_GLOBAL(::MyGlobalTrue);
+		WHEN_CALLED(::MyGlobalTrue((const char*)(_))).Return(false);
 
-		EXPECT_TRUE(MyGlobalTrue("fake"));
+		// function does not take 0 arguements
+		//WHEN_CALLED(::MyGlobalTrue(ANY_VAL(const char*))).Return(false); 
+
+		EXPECT_FALSE(::MyGlobalTrue("fake"));
 
 		ISOLATOR_CLEANUP();
 	}

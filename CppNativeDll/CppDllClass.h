@@ -14,5 +14,7 @@ public:
 	bool TrueFromCS();
 
 	bool TrueMyself();
+
+	static bool TrueStatic();
 };
 

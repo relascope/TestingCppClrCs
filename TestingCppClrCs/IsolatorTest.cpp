@@ -11,6 +11,11 @@ bool MyGlobalTrue(const char* par)
 }
 
 
+bool MyGlobalTrueNoArgs()
+{
+	return true;
+}
+
 namespace IsolatorTest
 {
 	TEST_CLASS(TestingCppClrCs)
@@ -23,6 +28,16 @@ namespace IsolatorTest
 			WHEN_CALLED(MyGlobalTrue(_)).Return(false);
 
 			Assert::IsFalse(MyGlobalTrue("fake"));
+
+			ISOLATOR_CLEANUP();
+		}
+
+		TEST_METHOD(FakeNoArg)
+		{
+			FAKE_GLOBAL(MyGlobalTrueNoArgs);
+			WHEN_CALLED(MyGlobalTrueNoArgs()).Return(false);
+
+			Assert::IsFalse(MyGlobalTrueNoArgs());
 
 			ISOLATOR_CLEANUP();
 		}
