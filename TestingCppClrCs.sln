@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoogleTest5", "GoogleTest5\GoogleTest5.vcxproj", "{406EAA40-EA42-4DFF-9D3B-2CA90B2FC45A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,6 +90,18 @@ Global
 		{066B7094-417D-4EA7-AC51-205BAD31913C}.Release|x64.Build.0 = Release|Any CPU
 		{066B7094-417D-4EA7-AC51-205BAD31913C}.Release|x86.ActiveCfg = Release|Any CPU
 		{066B7094-417D-4EA7-AC51-205BAD31913C}.Release|x86.Build.0 = Release|Any CPU
+		{406EAA40-EA42-4DFF-9D3B-2CA90B2FC45A}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{406EAA40-EA42-4DFF-9D3B-2CA90B2FC45A}.Debug|Any CPU.Build.0 = Debug|x64
+		{406EAA40-EA42-4DFF-9D3B-2CA90B2FC45A}.Debug|x64.ActiveCfg = Debug|x64
+		{406EAA40-EA42-4DFF-9D3B-2CA90B2FC45A}.Debug|x64.Build.0 = Debug|x64
+		{406EAA40-EA42-4DFF-9D3B-2CA90B2FC45A}.Debug|x86.ActiveCfg = Debug|Win32
+		{406EAA40-EA42-4DFF-9D3B-2CA90B2FC45A}.Debug|x86.Build.0 = Debug|Win32
+		{406EAA40-EA42-4DFF-9D3B-2CA90B2FC45A}.Release|Any CPU.ActiveCfg = Release|x64
+		{406EAA40-EA42-4DFF-9D3B-2CA90B2FC45A}.Release|Any CPU.Build.0 = Release|x64
+		{406EAA40-EA42-4DFF-9D3B-2CA90B2FC45A}.Release|x64.ActiveCfg = Release|x64
+		{406EAA40-EA42-4DFF-9D3B-2CA90B2FC45A}.Release|x64.Build.0 = Release|x64
+		{406EAA40-EA42-4DFF-9D3B-2CA90B2FC45A}.Release|x86.ActiveCfg = Release|Win32
+		{406EAA40-EA42-4DFF-9D3B-2CA90B2FC45A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
