@@ -20,24 +20,30 @@ namespace TestingCppClrCs
 			Assert::IsTrue(NativeClass::TrueStatic());
 		}
 
+		TEST_METHOD(TestCppClr)
+		{
+			Assert::IsTrue(NativeClass::TrueFromCppCLR());
+		}
+
 		TEST_METHOD(TestCS)
 		{
 			Assert::IsTrue(NativeClass::TrueFromCS());
 		}
 
-		TEST_METHOD(TestCsFromDLL)
-		{
-			Assert::IsTrue(CppDllClass().TrueFromCLR());
-		}
 
 		TEST_METHOD(TestNativeDLL)
 		{
 			Assert::IsTrue(CppDllClass().TrueMyself());
 		}
 
-		TEST_METHOD(TestCppClr)
+		TEST_METHOD(TestCsFromDLLCLR)
 		{
-			Assert::IsTrue(NativeClass::TrueFromCppCLR());
+			Assert::IsTrue(CppDllClass().TrueFromCLR());
 		}
-	};
+
+		TEST_METHOD(TestNativeDllCs)
+		{
+			Assert::IsTrue(CppDllClass().TrueFromCS());
+		}
+};
 }

@@ -3,9 +3,14 @@
 #include <CppClrClass.h>
 
 
-bool CppDllClass::TrueFromCLR()
+bool CppDllClass::TrueFromCS()
 {
 	return CppClrClass::TrueCS();
+}
+
+bool CppDllClass::TrueFromCLR()
+{
+	return CppClrClass().TrueMyself();
 }
 
 bool CppDllClass::TrueMyself()

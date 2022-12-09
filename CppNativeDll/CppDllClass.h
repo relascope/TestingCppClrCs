@@ -11,6 +11,8 @@ class MYDLL CppDllClass
 public:
 	bool TrueFromCLR();
 
+	bool TrueFromCS();
+
 	bool TrueMyself();
 };
 
