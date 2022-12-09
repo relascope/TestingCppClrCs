@@ -14,6 +14,11 @@ Tests succeed, when calling into C#
 Compiling wiht /clr possible, tests discovered
 Linking against *.obj possible, but be sure, there is no "main"
 
+Typemock Isolator++
+-------------------
+Working with Microsoft C++ Test
+Not working with google test
+
 Projects
 ========
 
