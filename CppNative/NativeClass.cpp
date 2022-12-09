@@ -14,15 +14,3 @@ bool NativeClass::TrueFromCppCLR()
 {
 	return CppClrClass().TrueMyself();
 }
-
-#include <stdio.h>
-
-int main(int argc, char** argv)
-{
-	if (NativeClass().TrueFromCS())
-		printf("Hello World\n");
-	else
-		printf("something went terribly wrong");
-
-	return 0;
-}

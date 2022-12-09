@@ -12,7 +12,7 @@ Google-Test
 -----------
 Tests succeed, when calling into C#
 Compiling wiht /clr possible, tests discovered
-Exception in Test-discovery when linking against .obj-file
+Linking against *.obj possible, but be sure, there is no "main"
 
 Projects
 ========
