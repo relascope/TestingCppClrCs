@@ -22,3 +22,8 @@ bool CppDllClass::TrueStatic()
 {
 	return true;
 }
+
+void CppDllClass::SetUpAssemblyResolver()
+{
+	CppClrClass::SetUpAssemblyResolve();
+}

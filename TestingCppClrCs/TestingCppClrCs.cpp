@@ -10,6 +10,10 @@ namespace TestingCppClrCs
 	TEST_CLASS(TestingCppClrCs)
 	{
 	public:
+		TEST_CLASS_INITIALIZE(InitAssemblyResolve)
+		{
+			CppDllClass::SetUpAssemblyResolver();
+		}
 		
 		TEST_METHOD(TestMethod1)
 		{

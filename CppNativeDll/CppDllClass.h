@@ -16,5 +16,7 @@ public:
 	bool TrueMyself();
 
 	static bool TrueStatic();
+
+	static void SetUpAssemblyResolver();
 };
 
