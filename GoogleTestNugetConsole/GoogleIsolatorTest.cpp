@@ -15,7 +15,6 @@ namespace IsolatorTest
 		ISOLATOR_CLEANUP();
 	}
 
-
 	TEST(Isolator, googletest)
 	{
 		FAKE_GLOBAL(::MyGlobalTrue);
@@ -23,6 +22,10 @@ namespace IsolatorTest
 
 		// function does not take 0 arguements
 		//WHEN_CALLED(::MyGlobalTrue(ANY_VAL(const char*))).Return(false); 
+
+		// cannot convert argument 1 from int to const char *
+		//WHEN_CALLED(::MyGlobalTrue(_)).Return(false);
+
 
 		EXPECT_FALSE(::MyGlobalTrue("fake"));
 
