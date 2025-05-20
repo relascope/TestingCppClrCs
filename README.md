@@ -1,5 +1,8 @@
-C++ Testing for C++ Native to C++ CLR to C#.net
+C++ Testing for C++ Native to C++/CLI to C#.net
 =========================================================
+
+Testing Testing-Frameworks for integration tests from C++ Native to C#.Net
+
 
 Microsoft C++ Testing
 ---------------------
